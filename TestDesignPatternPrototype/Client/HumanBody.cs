@@ -12,11 +12,11 @@ namespace TestDesignPatternPrototype.Client
     {
         public void CreateRedCell()
         {
-            Cell cell = new RedCell();
-            cell.Name = "Cell";
-            cell.Type = "Default";
-            Cell cell2 = (RedCell)cell.Clone();
-            MessageBox.Show($"{ cell.Name},{ cell.Type},{cell2.Name},{cell2.Type}");
+            RedCell cell = new RedCell();
+            RedCell cell2 = (RedCell)cell.Clone();
+            WhiteCell cell3 = new WhiteCell();
+            WhiteCell cell4 = (WhiteCell)cell3.Clone();
+            MessageBox.Show($"{ cell.Name},{ cell.Type}\n{cell2.Name},{cell2.Type}\n{cell3.Type},{cell3.Name}\n{cell4.Name},{cell4.Type}");
         }
     }
 }

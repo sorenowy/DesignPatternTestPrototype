@@ -8,6 +8,11 @@ namespace TestDesignPatternPrototype.Prototype
 {
     class WhiteCell : Cell
     {
+        public WhiteCell()
+        {
+            this.Name = "WhiteCell";
+            this.Type = "Leucocytes";
+        }
         public override Cell Clone()
         {
             return this.MemberwiseClone() as Cell;
